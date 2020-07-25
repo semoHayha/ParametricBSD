@@ -20,17 +20,31 @@ let s1 = document.getElementById("s1"),
 	s3 = document.getElementById("s3"),
 	s4 = document.getElementById("s4");
 
+let x1 = document.getElementById("x1"),
+	y1 = document.getElementById("y1"),
+	x2 = document.getElementById("x2"),
+	y2 = document.getElementById("y2");
+
+x1.innerHTML = s1.value;
+y1.innerHTML = s2.value;
+x2.innerHTML = s3.value;
+y2.innerHTML = s4.value;
+
 s1.oninput = function() {
 	k1 = this.value;
+	x1.innerHTML = this.value;
 }
 s2.oninput = function() {
 	k2 = this.value;
+	y1.innerHTML = this.value;
 }
 s3.oninput = function() {
 	k3 = this.value;
+	x2.innerHTML = this.value;
 }
 s4.oninput = function() {
 	k4 = this.value;
+	y2.innerHTML = this.value;
 }
 
 let r = 150;
