@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title>Whatever</title>
 	<style type="text/css">
+		.sliderWidth {
+			width: 100%;
+		}
 		canvas {
 			border: 2px solid black;
 			background: black;
@@ -15,10 +18,12 @@
 </head>
 <body>
 	<canvas></canvas>
-	<input type="range" id = "s1" min = "0" max = "100" step = "1" value = "0">
-	<input type="range" id = "s2" min = "0" max = "100" step = "1" value = "0">
-	<input type="range" id = "s3" min = "0" max = "100" step = "1" value = "0">
-	<input type="range" id = "s4" min = "0" max = "100" step = "1" value = "0">
+
+	<input class="sliderWidth" type="range" id = "s1" min = "0" max = "100" step = "1" value = "0"><br>
+	<input class="sliderWidth" type="range" id = "s2" min = "0" max = "100" step = "1" value = "0"><br>
+	<input class="sliderWidth" type="range" id = "s3" min = "0" max = "100" step = "1" value = "0"><br>
+	<input class="sliderWidth" type="range" id = "s4" min = "0" max = "100" step = "1" value = "0"><br>
+
 	<script src="parametricBSD.js"></script>
 </body>
 </html>
